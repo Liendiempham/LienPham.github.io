@@ -5,11 +5,11 @@ function Bubble (x, y, img) {
 
     this.display = function () {
         imageMode(CENTER);
-        image(img, this.x, this.y, 100, 100);
+        image(img, this.x, this.y, 260, 260);
     }
 
     this.update = function () {
-        this.x = this.x + random(-1, 1);
-        this.y = this.y + random(-1, 1);
+        this.x = this.x + random(-2, 2);
+        this.y = this.y + random(-3, 1);
     }
  }

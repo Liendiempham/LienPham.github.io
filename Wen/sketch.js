@@ -1,15 +1,17 @@
 var bubbles = [];
 var sel = [];
+var img;
 
 function preload() {
-    for (var i = 0; i< 3; i++){
+    for (var i = 0; i< 29; i++){
         sel[i] = loadImage("images/sel" + i + ".jpg");
     }
 
 }
 
 function setup() {
-    cnv = createCanvas(600, 400);
+    cnv = createCanvas(1221, 880);
+    bg = loadImage("images/sel.jpg");
     }
 
 function mousePressed() {
@@ -19,7 +21,7 @@ function mousePressed() {
 }
 
 function draw() {
-    background(0);
+    background(bg);
 
     for (var i = bubbles.length-1; i >= 0; i--) {
         bubbles[i].update();
